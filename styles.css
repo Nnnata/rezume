@@ -194,6 +194,25 @@ ol,ul {
     width: 50%;
     
 }
+@media (max-width: 410px) {
+    .form-row {
+        margin-bottom:  20px;
+        
+         display: block;
+    }
+    .form-row .form-group { 
+         display:block;
+       padding: 10px;
+       margin: 20px;
+       
+        width: 50%;
+        
+    }
+    
+    
+    
+    
+   }/*   */
 /* .form-row .form-group { 
     display: inline-block;
     margin-right: 20px;
