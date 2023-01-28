@@ -1,67 +1,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ *{ 
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner {
+    max-width: 750px; 
+       margin: auto;
+       padding-top: 30px;
+}
 body {
-	/* font-family:  Vedana, sans-serif; */
-    background: #eee;
-
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 1,6em;
+    font-family: 'Roboto';
+    font-size: 16px;
     font-weight: normal;
-    /* font: normal 20px 'Roboto',sans-serif; */
-    /* text-decoration: underline ; */
-    /* text-decoration: line-through; */
-    /* font-style: italic; */
-    /* letter-spacing: 2px; */
-    /* word-spacing: 20px; */
+    background: #f1f1f1;
+    
 }
-header {
-    font-family: Geneva;
+.avatar {
+    border-radius: 25px;
+    width: 200px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+
+}
+ 
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+.info-text p,li,td {
+    font-style: italic;
+    font-weight: bold;
+    color: #828982;
+    margin: 0;
+    
+    
+}
+.info-text h3 { 
+    color: black;
+    margin-bottom: 10px;
+   
+}
+/* .nav { 
+    display: flex;
+}*/
+@media (max-width: 724px) {
+    
+    .info {
+        display: block;
+    }
+   }/*   */
+
+
+.navbar {
+    margin-top: 50px;
+    margin-bottom:  10 px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 0 20px;
+}
+.navbar ul li {
+    margin-right:  10 px;
+    padding: 10px;
+}
+/* .navbar ul li:hover { 
+    background: #ea6767;
+
+}*/
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+.card {
+    padding: 10px;
+    margin-bottom:10px;
+   
+}
+.card {
+    border-radius: 20px;
+     
+    margin-bottom: 20px;
+}
+@media (max-width: 410px) {
+    
+    
+    .navbar {
+        margin-top: 20px;
+        margin-bottom:  10 px;
+    }
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        padding: 0 20px;
+    }
+    .navbar ul li {
+       
+        padding: 10px;
+    }
+    
+    
+    
+   }/*   */
+.bg-yellow {
+    background: #fff9dc;
+}
+.bg-red {
+    background: #ffe5e5;
+}
+.bg-green {
+    background: #e5ffe7;
 }
 
-header h1 {
-     font-weight: bold; 
-    }
-header p {
-    /* font-family: Geneva; */
-    font-style: italic;
-    font-size: 25px;
-    }
-nav {
-    background-color: rgb(220, 236, 245);
+a {
+    
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: underline;
+
+}
+/* a:active { 
+    color: blue;
+
+}*/
+/* .list,.link-list { 
+    padding: 0px 20px;
+
+}
+
+ol,ul {
+    
+}*/
+.list li {
+    margin-bottom: 10px;
+}
+.link-list ul, .list ol {
+    list-style-position: inside;
+    list-style: none;
+    padding: 10px;
+}
+.link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
 }
 .table {
-	width: 100%;
-	border: none;
-	margin-bottom: 20px;
+    width: 100%;
 }
-.table thead th {
-	font-weight: bold;
-	text-align: left;
-	border: none;
-	padding: 10px 15px;
-	background: #d8d8d8;
-	font-size: 14px;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
+.table td {
+    padding:  10px;
 }
-.table tbody td {
-	text-align: left;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	padding: 10px 15px;
-	font-size: 14px;
-	vertical-align: top;
+/* .table td:nth-child(2), :nth-child(3) { 
+    
+}*/
+
+.btn {
+    background: #37373D;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: inherit;
 }
-.table thead tr th:first-child, .table tbody tr td:first-child {
-	border-left: none;
+ .btn:hover { 
+    opacity: .8;
 }
-.table thead tr th:last-child, .table tbody tr td:last-child {
-	border-right: none;
+.footer div{ 
+    margin: 10px;
 }
-.table tbody tr:nth-child(even){
-	background: #f3f3f3;
+.otstup {
+    margin-top: 5px;
+}
+.form h3 {
+    text-align: center;
+}
+.form-row {
+    margin-bottom:  20 px;
+    display: flex;
+}
+.form-row .form-group { 
+    /* display: inline-block; */
+   padding: 0;
+   margin: 0;
+    margin-right: 10px;
+    width: 50%;
+    
+}
+/* .form-row .form-group { 
+    display: inline-block;
+    margin-right: 20px;
+    /* width: 50%; /
+    width: calc(50%-20px);
+
+
+}
+.form-row .form-group:nth-last-child {
+    margin-right: 0;
+}*/
+
+.form-group label {
+    display: block;
+    color: #828982;
 }
 
-footer {
-    background-color: antiquewhite;
+.form-group input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    /* color: black; */
+    padding: 15px 0 10px;
+    outline: none;
 }
+

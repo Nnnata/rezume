@@ -5,90 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-     <!-- <link rel="stylesheet" href="03_font.css">  -->
-    <!-- <link rel="stylesheet" href="03_font2.css">  -->
+    
     <meta name="keywords" content="html,css,php,py">
     <meta name="description" content="портфолио, программист,работа,frontend, html, сайт Натальи ">
-<title>Наталья</title>
+<title>Rezume</title>
 </head>
 <body>
-    <header id="header" class="header">
-        <img src="avatar.png" alt="аватар" >
+    <div class="conteiner">
+        <div id="header" class="info card bg-yellow"> 
+            <img src="avatar.png" alt="аватар" class="avatar">
+            <div class="info-text"  >
+                <div>
+                    <h1>Наталья</h1>
+                    <p>Учусь создавать сайты.<br>
+                    Помогаю людям хорошо выглядеть и  радоватьсяжизни
+                    </p>
+                </div>
         
-        <h1>Наталья</h1>
-        <p>Учусь создавать сайты.<br>
-         <strong>Помогаю </strong>людям <em>хорошо выглядеть и  радоваться </em>жизни</p>
+                <div class="navbar card info-text bg-green ">
+                    <h3>Список социальных сетей</h3>
+                    <ul >
+                        <li><a href="https://t.me/Natali_osk" target="_blank" class="btn">Telegram</a>
+                        </li>
+                        <li><a href="https://vk.com/id746055223" target="_blank" class="btn">VK</a>
+                        </li>
+                        <li><a href="#" class="btn">Instsgram</a></li>
+                        <!-- <li><a href="#" class="btn">Мой сайт</a></li> -->
+                        <li><a href="#" class="btn">Rezume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     
-    </header>
-   
-     <nav> 
-         <hr>
-        <h3>Список социальных сетей</h3>
-    
-        <br>
-        <a href="https://t.me/Natali_osk" target="_blank">Telegram</a>|
-        <a href="https://vk.com/id746055223" target="_blank" >VK</a>|
-        <br>
-        <hr>
-    </nav>
-    <section>
-    <h3>Моё хобби</h3>
-    <ol>
-        <li>Путешествия</li>
-        <li>Коньки</li>
-        <li>Сад Огород Цветы</li>
-        <li>Магазинчик одежды</li>
-    </ol>
-    <hr>
-    <h3>Моя работа</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                <th>Работа </th>
-                <th>Должность</th>
-                <th>Период</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Школа</td>
-                    <td>учитель</td>
-                    <td>10 лет</td>
+        <div class="card info-text list bg-red"  > 
+            <h3>Моё хобби</h3>
+            <ol>
+                <li>Путешествия</li>
+                <li>Коньки</li>
+                <li>Сад Огород Цветы</li>
+                <li>Магазинчик одежды</li>
+            </ol>
+        </div>
+        <div class=" table card info-text bg-yellow"  > 
+            <h3>Моя работа</h3>
+            <table class="table">
+                <!-- <thead> 
+                    <tr>
+                    <th>Работа </th>
+                    <th>Должность</th>
+                    <th>Период</th>
+                    </tr>
+                </thead>-->
+                <tbody>
+                    <tr>
+                        <td>Школа</td>
+                        <td>учитель</td>
+                        <td>10 лет</td>
 
-                </tr>
-                <tr>
-                    <td>ИП</td>
-                    <td>Фриланс</td>
-                    <td>всегда</td>
+                    </tr>
+                    <tr>
+                        <td>ИП</td>
+                        <td>Фриланс</td>
+                        <td>всегда</td>
+                        
+                    </tr> 
                     
-                </tr> 
-                
-            </tbody>
-        </table>
-    </section>
- 
-   
-   <footer>
-      <hr>
-    <h4>Связаться со мной</h4>
-   
-    <div>
-        <label for="name"><strong>Введите имя:</strong</label>
-        <input type="text" id="name" placeholder="Введите имя">
-     </div> 
+                </tbody>
+            </table>
         
-     <div>
-        <label for="email"><strong>Введите Email:</strong</label>
-        <input type="email" id="email" placeholder="Введите Email">
-    </div> 
-    
-    <div>
-        <label for="massage"><strong>Введите сообщение: <br></strong</label>
+        </div>
+        <div class=" card info-text bg-green link-list">
+            <h3>Mои успехи</h3>
+            <ul>
+                <li>Здесь</li>
+                <li>будут </li>
+                <li>описаны</li>
+                <li>достяжения</li>
+            </ul>
+        </div>
         
-        <textarea type="massage" id="message"  cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
-        <br>
-        <button type="submit" value="Отправить"> Отправить форму</button>
+        <div class=" card footer  bg-red " >
+           <form action="/" class="form">
+                <h3>Связаться со мной</h3>
+                <div class="form-row  ">
+                    <div class="form-group">
+                        <label for="name">Введите имя:</label>
+                    
+                        <input class="otstup" type="text" id="name" placeholder="Введите имя" >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Введите Email:</label>
+                        
+                        <input class="otstup" type="email" id="email" placeholder="Введите Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="massage">Введите сообщение: </label>
+                    
+                    <textarea class="otstup" type="massage" id="message"  cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+                    <br>
+                <button type="submit" value="Отправить" class="btn"> Отправить</button>
+                </div>
+            </form> 
+
+        </div>
     </div>
-    </footer>
+
 </body>
 </html>
